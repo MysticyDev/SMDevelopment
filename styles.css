@@ -7,128 +7,97 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #ffcccc; /* Lichte rode achtergrond */
-    color: #800000; /* Donkerrode tekstkleur */
+    background-color: #f4f4f4;
+    color: #333;
 }
 
-a {
+/* Wrapper voor het gehele scherm */
+.wrapper {
+    display: flex;
+    height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 250px;
+    background-color: #2c3e50;
+    color: white;
+    padding: 20px;
+    position: fixed;
+    height: 100%;
+}
+
+.sidebar h2 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar ul li {
+    margin: 10px 0;
+}
+
+.sidebar ul li a {
+    color: white;
     text-decoration: none;
-    color: inherit;
-}
-
-/* Header */
-header {
-    background-color: #b30000; /* Donkerrode header */
-    color: #fff;
-    padding: 20px 0;
-}
-
-header .container {
-    width: 80%;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-header h1 {
-    font-size: 1.8em;
-}
-
-nav ul {
-    list-style-type: none;
-    display: flex;
-}
-
-nav ul li {
-    margin-left: 20px;
-}
-
-nav ul li a {
-    color: #fff;
     font-size: 1.1em;
-    transition: color 0.3s ease;
+    transition: color 0.3s;
 }
 
-nav ul li a:hover {
-    color: #ff6666; /* Lichtere rode kleur bij hover */
+.sidebar ul li a:hover {
+    color: #e74c3c;
 }
 
-/* Secties */
+/* Main content area */
+.content {
+    margin-left: 250px;
+    padding: 20px;
+    width: calc(100% - 250px);
+}
+
 section {
-    padding: 40px 0;
+    margin-bottom: 40px;
 }
 
-.container {
-    width: 80%;
-    margin: 0 auto;
-}
-
-h2 {
+h1 {
     font-size: 2em;
     margin-bottom: 20px;
-    color: #b30000; /* Donkerrode koppen */
 }
 
-.product {
-    background-color: #ff6666; /* Lichte rode achtergrond voor producten */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 8px;
-}
-
-.product h3 {
-    font-size: 1.6em;
-    margin-bottom: 10px;
-    color: #800000; /* Donkerrode tekst voor productnamen */
-}
-
-.product ul {
-    margin-left: 20px;
-    margin-bottom: 10px;
-}
-
-.product ul li {
+p {
     font-size: 1.1em;
-    margin-bottom: 5px;
+    margin-bottom: 20px;
 }
 
-.product p {
-    font-size: 1.2em;
-    font-weight: bold;
+ol, ul {
+    margin-left: 20px;
+    font-size: 1.1em;
 }
 
-/* Footer */
-footer {
-    background-color: #b30000; /* Donkerrode footer */
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
+pre {
+    background-color: #2c3e50;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    font-family: 'Courier New', Courier, monospace;
 }
 
-/* Responsiviteit */
+/* Responsiviteit voor mobiele apparaten */
 @media (max-width: 768px) {
-    header .container {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    nav ul {
-        margin-top: 10px;
+    .wrapper {
         flex-direction: column;
     }
 
-    nav ul li {
+    .sidebar {
+        width: 100%;
+        position: relative;
+    }
+
+    .content {
         margin-left: 0;
-        margin-bottom: 10px;
-    }
-
-    .container {
-        width: 90%;
-    }
-
-    .product {
-        margin-bottom: 30px;
+        width: 100%;
     }
 }
