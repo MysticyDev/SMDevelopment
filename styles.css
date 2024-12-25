@@ -1,40 +1,132 @@
-body {
-    font-family: Arial, sans-serif;
+/* Algemene instellingen */
+* {
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    box-sizing: border-box;
 }
 
-header {
-    background-color: #333;
-    color: white;
-    padding: 10px 0;
-    text-align: center;
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
 }
 
-header nav ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-header nav ul li {
-    display: inline;
-    margin-right: 20px;
-}
-
-header nav ul li a {
-    color: white;
+a {
     text-decoration: none;
+    color: inherit;
 }
 
+/* Header */
+header {
+    background-color: #1a1a1a;
+    color: #fff;
+    padding: 20px 0;
+}
+
+header .container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 1.8em;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    font-size: 1.1em;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #f1c40f;
+}
+
+/* Secties */
 section {
-    padding: 20px;
-    margin: 10px;
+    padding: 40px 0;
 }
 
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.product {
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+.product h3 {
+    font-size: 1.6em;
+    margin-bottom: 10px;
+}
+
+.product ul {
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+.product ul li {
+    font-size: 1.1em;
+    margin-bottom: 5px;
+}
+
+.product p {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+/* Footer */
 footer {
-    background-color: #333;
-    color: white;
+    background-color: #1a1a1a;
+    color: #fff;
+    padding: 20px 0;
     text-align: center;
-    padding: 10px 0;
+}
+
+/* Responsiviteit */
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        margin-top: 10px;
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .container {
+        width: 90%;
+    }
+
+    .product {
+        margin-bottom: 30px;
+    }
 }
