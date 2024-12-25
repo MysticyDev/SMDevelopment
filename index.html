@@ -3,39 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Producten Uitleg</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Koppeling naar een extern CSS-bestand voor stijl -->
+    <title>Onze Producten</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet"> <!-- Google Font -->
 </head>
 <body>
     <header>
-        <h1>Welkom op onze Productenpagina</h1>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#producten">Producten</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <h1>Welkom bij Onze Producten</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#producten">Producten</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <section id="home">
-        <h2>Introductie</h2>
-        <p>Welkom! Op deze website geven wij uitleg over onze verschillende producten.</p>
+        <div class="container">
+            <h2>Welkom op onze website</h2>
+            <p>Ontdek onze nieuwste producten die speciaal voor jou zijn ontworpen!</p>
+        </div>
     </section>
 
     <section id="producten">
-        <h2>Onze Producten</h2>
-        <p>Klik hieronder om meer te lezen over de producten die wij aanbieden:</p>
-        <a href="producten.md" target="_blank">Bekijk Producten Uitleg</a>
+        <div class="container">
+            <h2>Onze Producten</h2>
+            <div class="product">
+                <h3>Super Gadget</h3>
+                <p>De Super Gadget is een innovatief product dat je leven gemakkelijker maakt.</p>
+                <ul>
+                    <li>Kenmerk 1</li>
+                    <li>Kenmerk 2</li>
+                    <li>Kenmerk 3</li>
+                </ul>
+                <p><strong>Prijs: €99</strong></p>
+            </div>
+            <div class="product">
+                <h3>Premium Accessoire</h3>
+                <p>Het Premium Accessoire is een luxe product dat perfect past bij je dagelijkse benodigdheden.</p>
+                <ul>
+                    <li>Kenmerk A</li>
+                    <li>Kenmerk B</li>
+                    <li>Kenmerk C</li>
+                </ul>
+                <p><strong>Prijs: €199</strong></p>
+            </div>
+        </div>
     </section>
 
     <section id="contact">
-        <h2>Contact</h2>
-        <p>Heb je vragen? Neem contact met ons op via email@example.com.</p>
+        <div class="container">
+            <h2>Contact</h2>
+            <p>Heb je vragen? Neem contact met ons op via <a href="mailto:email@example.com">email@example.com</a></p>
+        </div>
     </section>
 
     <footer>
-        <p>&copy; 2024 Producten Uitleg</p>
+        <div class="container">
+            <p>&copy; 2024 Onze Producten | Alle rechten voorbehouden</p>
+        </div>
     </footer>
 </body>
 </html>
