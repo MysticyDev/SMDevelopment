@@ -7,8 +7,8 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #f9f9f9;
-    color: #333;
+    background-color: #ffcccc; /* Lichte rode achtergrond */
+    color: #800000; /* Donkerrode tekstkleur */
 }
 
 a {
@@ -18,7 +18,7 @@ a {
 
 /* Header */
 header {
-    background-color: #1a1a1a;
+    background-color: #b30000; /* Donkerrode header */
     color: #fff;
     padding: 20px 0;
 }
@@ -51,7 +51,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #f1c40f;
+    color: #ff6666; /* Lichtere rode kleur bij hover */
 }
 
 /* Secties */
@@ -67,10 +67,11 @@ section {
 h2 {
     font-size: 2em;
     margin-bottom: 20px;
+    color: #b30000; /* Donkerrode koppen */
 }
 
 .product {
-    background-color: #fff;
+    background-color: #ff6666; /* Lichte rode achtergrond voor producten */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     padding: 20px;
     margin-bottom: 20px;
@@ -80,6 +81,7 @@ h2 {
 .product h3 {
     font-size: 1.6em;
     margin-bottom: 10px;
+    color: #800000; /* Donkerrode tekst voor productnamen */
 }
 
 .product ul {
@@ -99,7 +101,7 @@ h2 {
 
 /* Footer */
 footer {
-    background-color: #1a1a1a;
+    background-color: #b30000; /* Donkerrode footer */
     color: #fff;
     padding: 20px 0;
     text-align: center;
